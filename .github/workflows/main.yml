@@ -30,10 +30,14 @@ jobs:
               env:
 #                 run: echo "WF_RUN_COUNTER=${{ github.run_number }}" >> $GITHUB_ENV
                 wfRunCounter: ${{ env.WF_RUN_COUNTER }}
-                SID: ${{secrets.SID}}
-                RMN: ${{secrets.RMN}}
-                PASSWORD: ${{secrets.PASSWORD}}
-                AUTH_TYPE: ${{secrets.AUTH_TYPE}}
+                SID: ${{env.SID}}
+                RMN: ${{env.RMN}}
+                PASSWORD: ${{env.PASSWORD}}
+                AUTH_TYPE: ${{env.AUTH_TYPE}}
+#                 SID: ${{secrets.SID}}
+#                 RMN: ${{secrets.RMN}}
+#                 PASSWORD: ${{secrets.PASSWORD}}
+#                 AUTH_TYPE: ${{secrets.AUTH_TYPE}}
               run: python code_samples/main.py
 
             - name: commit files
