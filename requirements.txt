@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 requests
-=======
-requests
->>>>>>> 4cad252437bf980d4cd426e8b2c9f617601cd6bf
